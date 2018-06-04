@@ -23,6 +23,8 @@ input_element.send_keys(Keys.RETURN)
 assert 'Python' in driver.title
 
 # 스크린샷 찍기
+# 화면 크기 변환 가능
+# driver.set_window_size(320, 600)
 driver.save_screenshot('search_results.png')
 
 # 검색 결과 출력
