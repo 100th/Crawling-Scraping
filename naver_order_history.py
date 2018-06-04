@@ -74,6 +74,12 @@ def print_order_history():
                 'price' : price
             }
             print(order[name]['date'], '-', order[name]['price'] + '원')
-
+"""
+browser.get_link() 메서드
+: 특정 글자가 적혀 있는 링크를 가져올 수 있다.
+"다음 페이지" 등의 글자가 있을 때 이를 활용하면 가능
+link_to_next = browser.get_link('더보기')
+browser.follow_link(link_to_next)
+"""
 if __name__ == '__main__':
     main()
